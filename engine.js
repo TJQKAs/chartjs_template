@@ -88,10 +88,14 @@ var freq = arrauniq.reduce(function (acc, curr) {
  };
  var MyNewChart = new Chart(ctx).Bar(data);
 
-
-
-
-
+ // document.getElementById("place1").innerHTML=(arraname + "<br/>");
+ var showarr =[];
+// to each elem of array we make some action
+ for(k in arruniq){
+  showarr.push("<br/>" + arruniq[k]);
+ }
+ // find id and put there data from array showarr
+ document.getElementById("place1").innerHTML=(showarr);
 }
 
 // var ctx = document.getElementById("myChart").getContext("2d");
